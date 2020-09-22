@@ -14,28 +14,32 @@ $query = "SELECT * FROM `account` WHERE Account_Number='$Account_Number' and Acc
 
 $result = mysqli_query($connection, $query) or die(mysqli_error($connection));
 $count = mysqli_num_rows($result);
-$query2 = "SELECT Amount FROM `account` WHERE Account_Number='$Account_Number'" ;
-$result2 = mysqli_query($connection, $query2) or die(mysqli_error($connection));
 
-$titles = array();
+if ($count == 1){
 
-
-
-while($row = mysqli_fetch_array($result2)){
-
-//$number =  number_format($row['Amount'] )
-//$val = $number + $Amount
-
-	
-      $titles[] = $row['Amount']
-
+if ($Amount > 1000){
+echo "<script>
+	alert('Amount Transffered');
+	window.location.href='http://3.16.181.135/firstpage.html'
+      </script>";
 }
-//echo $titles[]
-
-
-
+else{
+echo "<script>
+	alert('Amount exceeds than your balance');
+	window.location.href='http://3.16.181.135/firstpage.html'
+      </script>";
 
 }
 
+}else{
+echo "<script>
+        alert('Invalid account details');
+        window.location.href='http://3.16.181.135/firstpage.html'
+        </script>";
+
+
+//echo "Invalid Login Credentials";
+}
+}
 ?>
 

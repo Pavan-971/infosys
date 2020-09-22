@@ -8,7 +8,7 @@
 <div <div align="center">
 
 <h3>CITYBANK Money Transffer</h3>
-    <form id="login-form" method="post" action="accoun_auth_login.php" >
+    <form id="login-form" method="post" action="balancedetails.php" >
         <table border="0.16" >
             <tr>
                 <td><label for="Acc_Num">Acc_Num</label></td>
