@@ -27,8 +27,8 @@ if ($count == 1){
 }
 else{
 echo "<script>
-	alert('Amount exceeds than your balance');
-	window.location.href='http://18.224.137.53/firstpage.html'
+	alert('Invalid account number');
+	window.location.href='http://18.224.137.53/balancepage.php.html'
       </script>";
 
 }
