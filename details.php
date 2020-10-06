@@ -21,7 +21,7 @@ if ($count == 1){
 }else{
         echo "<script>
         alert('Invalid Login Credentials');
-        window.location.href='http://18.224.137.53/';
+        window.location.href='http://3.129.87.35/';
         </script>";
 
 //echo "Invalid Login Credentials";

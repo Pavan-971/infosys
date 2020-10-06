@@ -27,14 +27,14 @@ $result3 = mysqli_query($connection, $query3) or die(mysqli_error($connection));
 
 echo "<script>
         alert('Amount Transffered');
-        window.location.href='http://18.224.137.53/second.html'
+        window.location.href='http://3.129.87.35/second.html'
       </script>";
 }
 }
 else{
 echo "<script>
-        alert('insuuficent balancie');
-        window.location.href='http://18.224.137.53/firstpage.html'
+        alert('invalid details');
+        window.location.href='http://3.129.87.35/firstpage.html'
       </script>";
 
 }

@@ -18,7 +18,7 @@ if ($count == 1){
 
 	while($row = mysqli_fetch_array($result)){
 		echo '<script>alert("Account Balance: ' . $row['Amount'] . '")
-			window.location.href="http://18.224.137.53/second.html"
+			window.location.href="http://3.129.87.35/second.html"
                         
                      </script>';
 
@@ -28,7 +28,7 @@ if ($count == 1){
 else{
 echo "<script>
 	alert('Invalid account number');
-	window.location.href='http://18.224.137.53/balancepage.php'
+	window.location.href='http://3.129.87.35/balancepage.php'
       </script>";
 
 }
